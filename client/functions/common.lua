@@ -54,7 +54,7 @@ end
 
 function SetPed(model, coords, freeze, collision, scenario, anim)
     LoadModel(model)
-    local ped = CreatePed(0, model, coords.x, coords.y, coords.z - 1.03, coords.w, true, false)
+    local ped = CreatePed(0, model, coords.x, coords.y, coords.z - 1.03, coords.w, false, true)
     SetEntityInvincible(ped, true)
     SetBlockingOfNonTemporaryEvents(ped, true)
     FreezeEntityPosition(ped, freeze or true)

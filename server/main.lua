@@ -4,7 +4,7 @@ lib.locale()
 
 -- [[ FUNCTIONS ]] --
 local function updatePlayerData(license, received)
-    local query = "UPDATE tcd_starterpack SET received = ?, date_received = ? WHERE identifier = ?"
+    local query = "UPDATE mri_Qstarterpack SET received = ?, date_received = ? WHERE identifier = ?"
     local params = { received, os.date("%Y-%m-%d %H:%M:%S", os.time()), license }
 
     ExecuteQuery(query, params, function()
@@ -13,7 +13,7 @@ local function updatePlayerData(license, received)
 end
 
 local function initializeStarterPackData(license)
-    local query = "SELECT * FROM tcd_starterpack WHERE identifier = ?"
+    local query = "SELECT * FROM mri_Qstarterpack WHERE identifier = ?"
     local params = { license }
 
     local response = FetchQuery(query, params)
@@ -21,7 +21,7 @@ local function initializeStarterPackData(license)
     if response[1] then
         return true
     else
-        local insertQuery = "INSERT INTO tcd_starterpack (identifier, received, date_received) VALUES (?, ?, ?)"
+        local insertQuery = "INSERT INTO mri_Qstarterpack (identifier, received, date_received) VALUES (?, ?, ?)"
         local insertParams = { license, 0, nil }
 
         ExecuteQuery(insertQuery, insertParams, function()

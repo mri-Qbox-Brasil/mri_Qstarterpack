@@ -55,7 +55,7 @@ function CheckTable()
     end
 
     local query = [[
-        CREATE TABLE IF NOT EXISTS tcd_starterpack (
+        CREATE TABLE IF NOT EXISTS mri_Qstarterpack (
             id INT AUTO_INCREMENT PRIMARY KEY,
             identifier VARCHAR(50) NOT NULL,
             received BOOLEAN NOT NULL,

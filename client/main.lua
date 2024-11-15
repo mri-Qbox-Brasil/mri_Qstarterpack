@@ -185,7 +185,7 @@ local function intializeTargetWithPed(data)
 
         if Config.TargetResource == 'ox_target' and GetResourceState(Config.TargetResource) == 'started' then
             local option = {
-                name = "tcd_starterpack_" .. math.random(1, 1000), -- This to avoid conflicts
+                name = "mri_Qstarterpack_" .. math.random(1, 1000), -- This to avoid conflicts
                 icon = data.icon,
                 label = data.label,
                 distance = data.distance,
@@ -201,8 +201,8 @@ local function intializeTargetWithPed(data)
                 end
             }
 
-            exports.ox_target:addModel(data.ped.model, option)
-            Targets[#Targets + 1] = { name = option.name, model = data.ped.model }
+            exports.ox_target:addLocalEntity(ped, option)
+            Targets[#Targets + 1] = { name = option.name, model = data.ped.model, entity = ped }
         elseif Config.TargetResource == 'qb-target' and GetResourceState(Config.TargetResource) == 'started' then
             exports['qb-target']:AddTargetModel(data.ped.model, {
                 options = {
@@ -362,7 +362,8 @@ for _, location in pairs(Config.Locations) do
             if Framework == "esx" then
                 exports.ox_target:removeModel(target.model, target.name)
             elseif Framework == "qbcore" then
-                exports['qb-target']:RemoveTargetModel(target.model, target.name)
+                exports.ox_target:removeLocalEntity(target.netid, target.name)
+                -- exports['qb-target']:RemoveTargetModel(target.model, target.name)
             end
         end
 

@@ -102,7 +102,7 @@ end
 ---@return boolean
 ---@description Check if the player has received the starter pack
 function HasReceivedStarterPack(license)
-    local query = "SELECT received FROM tcd_starterpack WHERE identifier = ?"
+    local query = "SELECT received FROM mri_Qstarterpack WHERE identifier = ?"
     local params = { license }
 
     local response = FetchQuery(query, params)
