@@ -1,0 +1,10 @@
+{
+    "already_received": "Você já recebeu seu pacote inicial",
+    "success": "Você recebeu seu pacote inicial. Aproveite!",
+    "progress_cancelled": "Você cancelou o progresso do pacote inicial",
+    "not_near_receiving_point": "Você não está próximo ao ponto de recebimento",
+    "no_available_spawn": "A área disponível para spawn de veículo está ocupada",
+    "player_in_vehicle": "Você não pode receber o pacote inicial enquanto estiver dentro do veículo",
+    "safezone_enter": "Você entrou na zona segura",
+    "safezone_exit": "Você não está mais em uma zona segura"
+}

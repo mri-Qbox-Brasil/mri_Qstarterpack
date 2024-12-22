@@ -8,7 +8,7 @@ Config = {}
 ]]
 
 Config.Debug = false                      -- enable debug mode to see more information in the console
-Config.CheckVersion = true                -- check for the latest version of the script
+Config.CheckVersion = false                -- check for the latest version of the script
 
 Config.TargetResource = 'ox_target'       -- supported: ox_target, qb-target
 Config.InventoryResource = 'ox_inventory' -- supported: ox_inventory, qb-inventory, ps-inventory, qs-inventory
@@ -21,7 +21,7 @@ Config.UseTarget = true                   -- enable target system to interact wi
 Config.CommandConfig = {                  -- command to give the starter package
     enable           = true,
     command          = 'starterpack',
-    command_help     = 'Get your starter pack',
+    command_help     = 'Pegue seu kit inicial',
     starterpack_type = 'normal',
     starter_vehicle  = {
         enable = true,
@@ -34,7 +34,7 @@ Config.CommandConfig = {                  -- command to give the starter package
 Config.Locations = {
     ["1"] = {                                                                       -- Unique identifier for the location
         starterpack_type = 'normal',                                                -- Type of starter pack given to the player (set to false if you don't want to give a starter pack item)
-        label            = 'Get your starter pack',                                 -- Target label (shown to the player)
+        label            = 'Pegue seu kit inicial',                                 -- Target label (shown to the player)
         icon             = 'fa-solid fa-gift',                                      -- Target icon (from FontAwesome)
 
         coords           = vec4(-1040.479126, -2731.582520, 20.164062, 238.110229), -- Coordinates and heading of the NPC (ped)
@@ -55,8 +55,8 @@ Config.Locations = {
             enable = true,             -- Enable or disable the starter vehicle
             model = 'adder',           -- Vehicle model (from FiveM vehicle model list) will be ignored if random_vehicle is set to true
             random_vehicle = true,     -- Spawn a random vehicle from the list (true/false)
-            teleport_player = false,   -- Teleport player to the vehicle (true/false)
-            parking = "pillboxgarage", -- Parking location name for storing the vehicle in the database (set to nil if your garage system doesn't support parking)
+            teleport_player = true,   -- Teleport player to the vehicle (true/false)
+            parking = "Pillbox Garage Parking", -- Parking location name for storing the vehicle in the database (set to nil if your garage system doesn't support parking)
             vehicle_spawns = {         -- Spawn points for the vehicle (multiple spawn locations)
                 vec4(-1039.02, -2727.53, 19.65, 243.17),
                 vec4(-1043.3, -2725.09, 19.65, 241.12),
