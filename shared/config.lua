@@ -35,7 +35,7 @@ Config.CommandConfig = {                  -- command to give the starter package
 }
 
 Config.DialogInfo = { -- dialog settings for the starter pack
-    enable = true,
+    enable = false,
     title = 'Starter Pack',
     dialog_type = 'rules', -- available types: rules, quiz, captcha (only one type can be enabled)
     alert_description = 'You will receive a starter pack after accepting the rules / completing the quiz/captcha.',
@@ -109,7 +109,7 @@ Config.DialogInfo = { -- dialog settings for the starter pack
 Config.Locations = {
     ["1"] = {                                                                       -- Unique identifier for the location
         starterpack_type = 'normal',                                                -- Type of starter pack given to the player (set to false if you don't want to give a starter pack item)
-        label            = 'Get your starter pack',                                 -- Target label (shown to the player)
+        label            = 'Kit Inicial',                                 -- Target label (shown to the player)
         icon             = 'fa-solid fa-gift',                                      -- Target icon (from FontAwesome)
 
         coords           = vec4(-1040.479126, -2731.582520, 20.164062, 238.110229), -- Coordinates and heading of the NPC (ped)

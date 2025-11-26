@@ -1,0 +1,16 @@
+{
+    "already_received": "Você já recebeu seu kit inicial",
+    "success": "Você recebeu seu kit inicial, aproveite!",
+    "progress_cancelled": "Você cancelou o progresso do kit inicial",
+    "not_near_receiving_point": "Você não está próximo do ponto de recebimento",
+    "no_available_spawn": "A área possível para spawn do veículo está ocupada",
+    "player_in_vehicle": "Você não pode receber o kit inicial enquanto estiver no veículo",
+    "safezone_enter": "Você entrou na zona segura",
+    "safezone_exit": "Você não está mais em uma zona segura",
+    "solved_captcha": "Você resolveu o captcha",
+    "failed_captcha": "Você falhou no captcha, tente novamente",
+    "accepted_rules": "Obrigado por aceitar as regras, agora você pode receber seu kit inicial",
+    "declined_rules": "Você deve aceitar as regras para receber o kit inicial",
+    "answered_correctly": "Você respondeu todas as perguntas com sucesso",
+    "answered_incorrectly": "Você falhou em responder todas as perguntas corretamente, tente novamente"
+}
