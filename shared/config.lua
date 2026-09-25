@@ -170,7 +170,7 @@ Config.StarterPackItems = { -- items that will be given to player
     ["normal"] = {
         { item = 'burger',   amount = 5 },
         { item = 'sprunk',   amount = 5 },
-        { item = 'phone',    amount = 1 },
+        { item = 'phone_black', amount = 1 },
         { item = 'lockpick', amount = 5 },
         { item = 'money',    amount = 5000 },
     },
