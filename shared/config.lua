@@ -8,7 +8,7 @@ Config = {}
 ]]
 
 Config.Debug = false                      -- enable debug mode to see more information in the console
-Config.CheckVersion = true                -- check for the latest version of the script
+Config.CheckVersion = false                -- checks the original repo (Teezy-Core), not the MRI fork: updates come through the MRI installer
 Config.DBChecking = true                  -- check if the database table, and columns are initialized properly (only enable this if you are having issues with the database)
 Config.CheckPacksCommand = 'checkpacks'   -- command to check all players who have received the starter pack
 
